@@ -36,24 +36,80 @@ AuditAI is an AI-powered compliance automation platform designed for modern ente
 
 ## Tech Stack
 
-- **Frontend**: Next.js 13 (App Router), React 18, TypeScript
-- **Styling**: Tailwind CSS, shadcn/ui components
-- **State Management**: React Context API
-- **API**: Next.js API Routes
-- **Authentication**: [Specify your auth solution, e.g., NextAuth.js]
-- **Database**: [Specify your database, e.g., PostgreSQL with Prisma ORM]
-- **AI/ML**: [Specify your AI/ML stack, e.g., TensorFlow.js, OpenAI API]
-- **Deployment**: Vercel
+- **Frontend:** React, Next.js, Tailwind CSS
+- **Backend:** Node.js, Express
+- **Database:** PostgreSQL
+- **Authentication:** JWT, OAuth
+- **CI/CD:** GitHub Actions
+- **Hosting:** Vercel, AWS
 
 ## Getting Started
 
 ### Prerequisites
 
-- Node.js (v14 or later)
+- Node.js >= 14.x
 - npm or yarn
-- [Any other specific requirements]
+- PostgreSQL
 
 ### Installation
 
 1. Clone the repository:
+    ```sh
+    git clone https://github.com/yourusername/auditai.git
+    cd auditai
+    ```
 
+2. Install dependencies:
+    ```sh
+    npm install
+    # or
+    yarn install
+    ```
+
+3. Set up environment variables:
+    ```sh
+    cp .env.example .env
+    ```
+
+4. Run the development server:
+    ```sh
+    npm run dev
+    # or
+    yarn dev
+    ```
+
+## Usage
+
+To start using AuditAI, navigate to `http://localhost:3000` in your browser.
+
+## Project Structure
+
+- **components/**: React components
+- **hooks/**: Custom React hooks
+- **lib/**: Utility functions
+- **pages/**: Next.js pages
+- **public/**: Static assets
+- **styles/**: Global and component-specific styles
+- **types/**: TypeScript type definitions
+
+## Development
+
+### Available Scripts
+
+- `npm run dev`: Start the development server
+- `npm run build`: Build the project for production
+- `npm run start`: Start the production server
+- `npm run lint`: Run ESLint
+- `npm run test`: Run tests
+
+### Styling
+
+We use Tailwind CSS for styling. Global styles are defined in [globals.css](http://_vscodecontentref_/1).
+
+## Testing
+
+To run tests, use the following command:
+```sh
+npm run test
+# or
+yarn test
